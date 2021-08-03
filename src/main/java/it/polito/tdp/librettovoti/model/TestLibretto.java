@@ -17,6 +17,8 @@ public class TestLibretto {
 		libretto.add(voto3);
 
 		System.out.println(libretto.toString());
+		
+		System.out.println(libretto.votiUguali(21));
 
 	}
 

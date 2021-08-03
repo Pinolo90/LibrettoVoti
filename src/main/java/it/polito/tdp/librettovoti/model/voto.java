@@ -46,7 +46,7 @@ public class voto {
 
 	@Override
 	public String toString() {
-		return "voto [nome=" + nome + ", voto=" + voto + ", data=" + data + "]";
+		return "nome= " + nome + ", voto= " + voto + ", data= " + data ;
 	}
 
 }

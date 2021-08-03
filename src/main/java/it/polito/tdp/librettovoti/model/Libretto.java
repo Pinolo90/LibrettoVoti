@@ -20,9 +20,24 @@ public class Libretto {
 		this.voti.add(v);
 	}
 
+	public Libretto votiUguali(int votiUguali) {
+		
+		Libretto risultato = new Libretto();
+		for (voto v : this.voti) {
+			if (v.getVoto() == votiUguali) {
+				risultato.add(v);
+			}
+		}
+		return risultato;
+	}
+
 	@Override
 	public String toString() {
-		return "Libretto [voti=" + voti + "]";
+		String risultato = "";
+		for (voto v : this.voti) {
+			risultato += v + "\n";
+		}
+		return risultato;
 	}
 
 }

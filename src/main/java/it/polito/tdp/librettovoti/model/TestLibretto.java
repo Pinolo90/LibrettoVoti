@@ -19,6 +19,8 @@ public class TestLibretto {
 		System.out.println(libretto.toString());
 		
 		System.out.println(libretto.votiUguali(21));
+		
+		System.out.println(libretto.votoEsame("Italiano").getVoto());
 
 	}
 

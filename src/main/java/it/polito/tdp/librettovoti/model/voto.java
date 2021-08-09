@@ -10,7 +10,6 @@ public class voto {
 
 	public voto() {
 		super();
-		// TODO Auto-generated constructor stub
 	}
 
 	public voto(String nome, int voto, LocalDate data) {

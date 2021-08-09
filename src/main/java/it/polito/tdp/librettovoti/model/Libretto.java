@@ -9,11 +9,13 @@ public class Libretto {
 
 	public Libretto() {
 		super();
+		
 	}
 
 	public Libretto(List<voto> voti) {
 		super();
 		this.voti = voti;
+		
 	}
 
 	public void add(voto v) {
@@ -21,7 +23,7 @@ public class Libretto {
 	}
 
 	public Libretto votiUguali(int votiUguali) {
-		
+
 		Libretto risultato = new Libretto();
 		for (voto v : this.voti) {
 			if (v.getVoto() == votiUguali) {
@@ -29,6 +31,18 @@ public class Libretto {
 			}
 		}
 		return risultato;
+	}
+
+	public voto votoEsame(String nomeCorso) {
+		voto risultato = null;
+		for (voto v : this.voti) {
+			if (v.getNome().equals(nomeCorso)) {
+				risultato = v;
+				break;
+			}
+		}
+		return risultato;
+
 	}
 
 	@Override
